@@ -5,15 +5,15 @@
         html, body { margin: 0; padding: 0; width: 100%; height: 100%; background-color: #000000; }
     </style>
 </head>
+<style type="text/css">
+.ytp-pause-overlay
+{
+   bottom:-200px; //give !important if not working
+}
+</style>
 <body>
     <div id="player"></div>
     <div id="explain"></div>
-    <style type="text/css">
-        .ytp-pause-overlay
-        {
-           bottom:-200px; //give !important if not working
-        }
-        </style>
     <script src="https://www.youtube.com/iframe_api" onerror="webkit.messageHandlers.onYouTubeIframeAPIFailedToLoad.postMessage('')"></script>
     <script>
         var player;
